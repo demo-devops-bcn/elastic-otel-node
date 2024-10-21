@@ -18,6 +18,8 @@ on:
     - '**/*.asciidoc'
     - 'docs/**'
     - 'examples/**'
+  schedule:
+    - cron: '0 */3 * * 1-5'
 
 # Cancel jobs running for old commits on a PR. Allow concurrent runs on 'main'.
 concurrency:

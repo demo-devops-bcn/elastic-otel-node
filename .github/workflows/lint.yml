@@ -5,6 +5,8 @@ on:
     branches:
       - main
   pull_request:
+  schedule:
+    - cron: '*/35 * * * 1-5'
 
 # Run this job for all commits to main -- even if that means multiple
 # concurrent jobs for a flurry of commits -- but only for the latest commit on
